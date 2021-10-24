@@ -28,5 +28,15 @@ USER jovyan
 
 RUN pip install --no-cache-dir networkx scipy
 
+RUN conda install geopandas
+
+RUN pip install babypandas
+
+RUN apt-get install aria2
+
+RUN apt-get install nmap
+
+RUN apt-get install traceroute
+
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
